@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            .box{
+                margin: 3px;
+                padding: 3px;
+                border: black;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+
+            }
+
+            #box{color: rgb(48, 11, 253);
+                margin: 6px;
+                
+                background-color: chocolate;
+                width: 200px;
+                height: 100px;
+                font-size: 40px;
+                border: 2px solid black;
+                display: flex;
+                flex-shrink: inherit;
+                justify-content: center;
+                 }
+                 .box1 {
+                     order: 2; }
+
+                     .box2 {
+                     order: 4; }
+                     .box3 {
+                     order: 3; }
+                     .box5 {
+                     order: 1; }
+        </style>
+         <div class="box">
+            <div id="box"class="box1">hello</div>
+            <div id="box" class="box2">hi</div>
+            <div id="box" class="box3">how</div>
+            <div id="box" class="box4">are</div>
+            <div id="box" class="box5">you</div>
+        </div>
+        
+    </body>
+</html>
