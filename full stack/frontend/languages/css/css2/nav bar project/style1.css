@@ -28,7 +28,7 @@ transform: background 0.5s;
     list-style: none;
 }
 .submain :hover{ color: yellow;
-    display:none;
+    display:block;
 }
 li a{
     text-decoration: none;
