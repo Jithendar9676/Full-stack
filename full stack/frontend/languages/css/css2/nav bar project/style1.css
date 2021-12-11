@@ -3,33 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
-.mainbar ul{
-    background-color: aqua;
-    color: rgb(3, 7, 7);
-    display: block;
-    height:100px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: 20px;
-font-weight: 100;
-width: 100%;
-transform: background 0.5s;
-
-}
-
-.mainbar ul :hover{
-    background-color: tomato;
-   
-}
-.mainbar ul{display:none;
-    display: inline-flex;
-    width: 100%;
-    position:absolute;
+.mainbar {
+    background-color: rgb(220, 82, 224);
+    color: black;
     text-align: center;
+
+}
+.mainbar ul  {display:block;
+    display: inline-flex;
     list-style: none;
 }
-.submain :hover{ color: yellow;
-    display:block;
+.mainbar ul li {
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 25px;
+
 }
-li a{
-    text-decoration: none;
+.mainbar ul li:hover{ background: rgb(224, 224, 230);
+
 }
+
+li .submain{
+    display: none;
+}
+
+
+.mainbar ul :hover .submain {
+    background-color: darkcyan;
+    margin-top: 20px;
+    margin-left: -20px;
+    text-align: left;
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    
+}
+
+    
