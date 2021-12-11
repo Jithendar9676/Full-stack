@@ -21,9 +21,9 @@ transform: background 0.5s;
    
 }
 .mainbar ul{display:none;
-    display: flex;
+    display: inline-flex;
     width: 100%;
-    position: relative;
+    position:absolute;
     text-align: center;
     list-style: none;
 }

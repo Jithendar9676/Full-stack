@@ -1,0 +1,37 @@
+h1 {
+  background-color: cornflowerblue;
+  color: black;
+  font-size: 80px;
+}
+
+a {
+  background-color: brown;
+  color: cornflowerblue;
+}
+
+.con {
+  background-color: cornflowerblue;
+}
+
+.about {
+  background-color: cornflowerblue;
+}
+
+.root1 {
+  width: 150px;
+  height: 150px;
+  background: #eb1e1e;
+}
+
+.root2 {
+  width: 150px;
+  height: 150px;
+  background: #403dec;
+}
+
+.root3 {
+  width: 150px;
+  height: 150px;
+  background: #d83ff7;
+}
+/*# sourceMappingURL=intro.css.map */

@@ -1,0 +1,39 @@
+@import './import'
+
+
+
+
+$co:cornflowerblue;
+h1{
+    background-color: $co;
+    color: black;
+    // operators
+    font-size: 50px+30px;
+}
+
+a{
+    background-color: brown;
+    color:$co;
+}
+.con{
+    background-color:$co 
+}
+.about{
+    background-color:$co ;
+}
+@mixin chintu ($a,$b,$c) {
+    width: $a;
+    height: $b;
+    background: $c
+}
+.root1{
+    @include chintu(150px,150px,rgb(235, 30, 30))
+
+}
+.root2{
+    @include chintu(150px,150px,rgb(64, 61, 236))
+}
+
+ .root3{
+        @include chintu(150px,150px,rgb(216, 63, 247))
+ }
