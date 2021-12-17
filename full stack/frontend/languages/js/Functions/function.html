@@ -1,0 +1,57 @@
+<script>
+     function area(length,Width){
+         return length*Width
+        
+     }
+     var area1 = area(15,26)
+     console.log(area1)
+
+
+
+var recanglesareas =[]
+recanglesareas.push(area(15,12))
+recanglesareas.push(area(54,21))
+recanglesareas.push(area(5,12))
+recanglesareas.push(area(10,25))
+console.log(recanglesareas)
+
+
+ var bankbalance = 50000
+
+ function maketransaction(priceofproduct){
+     if (priceofproduct <= bankbalance){
+         bankbalance-= priceofproduct
+         console.log("purchasebsuccessfully")
+        
+     }else{
+         console.log("insufficient money")
+
+     }
+ }
+
+console.log(bankbalance)
+
+maketransaction(25110)
+
+console.log(bankbalance)
+maketransaction(17025)
+
+console.log(bankbalance)
+maketransaction(4500)
+
+
+console.log(bankbalance)
+maketransaction(5002)
+
+
+
+var printcustomerName = function(first,last){
+    console.log("first Name: " + first + "Last Name:  " + last)
+}
+
+var BankOperations =[]
+
+BankOperations.push(maketransaction)
+BankOperations.push(printcustomerName)
+
+</script>
