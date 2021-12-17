@@ -14,7 +14,7 @@
     list-style: none;
 }
 .mainbar ul li {
-    width: 250px;
+    width: 100%;
     margin: 15px;
     padding: 15px;
     font-size: 25px;

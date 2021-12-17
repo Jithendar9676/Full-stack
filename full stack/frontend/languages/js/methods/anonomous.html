@@ -1,0 +1,29 @@
+<input id=A1 type="number" value="">
+<input id="A2" type="number" value="">
+<button onclick="fun()">submit</button>
+<div id="root"></div>
+
+<script>
+
+    var fun = function(a,b){
+        var a = document.getElementById("A1").value
+
+        var b = document.getElementById("A2").value
+
+        console.log(parseInt(a)+parseInt(b))
+        document.getElementById("root").innerHTML=(parseInt(a)+parseInt(b))
+
+
+
+    }
+    
+
+
+
+
+
+
+
+
+
+</script>
