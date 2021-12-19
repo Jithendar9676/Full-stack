@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+<center>
+        <h1> Welcome to Gussing game</h1>
+        <br>
+        <h1 id="root"> </h1>
+        <br>
+        <button onclick="random()">click me</button>
+    </center>
+        <script>
+            function random(){
+                var random=Math.floor(Math.random()*6+1)
+                document.getElementById('root').innerHTML=random
+                console.log(random)
+
+            }
+        </script>
+    </body>
+</html>

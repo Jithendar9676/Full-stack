@@ -1,0 +1,24 @@
+<h1>Date and Time</h1>
+<button  type="button" onclick= "Date()">click me to show time and date</button>
+<h2 id="a"></h2>
+<script>
+     function Date(){
+        document.getElementById('a').innerHTML 
+     }
+        
+        </script>
+        <script>
+           function light(a){
+              var pic;
+              if (a == 0) {
+                 pic = "pic_bulboff.gifb"
+              }else{
+                 pic = "on.png"
+              }
+              document.getElementById('mylight').src =pic
+           }
+        </script>
+        <img id= mylight src="pic_bulboff.gif" alt="light">
+        <p><button type="button" onclick="light(1)">light on</button>
+      <button type="button" onclick="light(0)">light of</button>
+      </p>

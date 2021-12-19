@@ -1,0 +1,1 @@
+console.log('second way of js linking')
