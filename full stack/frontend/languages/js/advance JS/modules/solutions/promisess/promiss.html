@@ -1,0 +1,24 @@
+<script>
+    var onepromiss =new Promise((fullfill,rejected)=>{
+
+        setTimeout(() => {
+            var err=true
+           if(!err){ 
+               fullfill('Im fullfill')
+        }else{
+            rejected('not fullfilled')
+        }
+        }, 2000);
+    })
+    onepromiss.then((data) => {
+        console.log(data)
+        return data
+         })
+
+         
+
+    onepromiss.catch((err) => {
+            console.log(err)
+            return err
+        })
+</script>
