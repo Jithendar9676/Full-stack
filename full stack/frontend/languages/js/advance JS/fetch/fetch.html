@@ -1,0 +1,16 @@
+<script>
+function fun(){
+    var data=fetch("https://api.github.com/users")
+    return data
+}
+
+fun().then((mydata1)=>{
+    return mydata1.text()
+}).then((mydata2)=>{
+    return mydata2
+    console.log(mydata2)
+})
+
+
+
+</script>
