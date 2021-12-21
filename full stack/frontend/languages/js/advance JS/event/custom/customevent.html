@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <button id="root" >click me</button>
+        <h1>result</h1>
+
+        <script>
+            var button=document.getElementById('root')
+            var result=document.querySelector('h1')
+
+            button.addEventListener('click',()=>{
+                var ran=Math.floor(Math.random()*4)
+               var array=['red','bule','black']
+               var data={
+                    Number:ran,
+                    backgroundColor:array[ran],
+                    Color:'pink',
+                }
+        ChangeColor(data)
+                
+                
+            })
+            function ChangeColor(data){
+            // console.log(data)
+            var myevent=new CustomEvent('newevent',{
+                detail:data
+            })
+              result.dispatchEvent(myevent)
+            
+            }
+            result.addEventListener('newevent',(e)=>{
+                console.log(e.data)
+
+                let {Number,backgroundColor,Color}=e.data
+                h1.style.Number=Number
+                h1.style.backgroundColor=backgroundColor
+                h1.style.Color=Color
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            #parent{
+                background-color: blueviolet;
+                width: 500px;
+                height: 500px;
+            }
+            #child{
+                background-color: rgb(43, 226, 217);
+                width: 350px;
+                height: 350px;
+            }
+            #grandchild{
+                background-color: rgb(198, 226, 43);
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+
+        <div id="parent">parent
+            <div id="child">child
+                <div id="grandchild">
+                    grandchild
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.querySelector("#parent")
+            .addEventListener('click', (e)=>{
+                console.log(e.target)
+            })
+        </script>
+
+    </body>
+</html>
