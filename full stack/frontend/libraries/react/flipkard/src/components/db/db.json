@@ -1,0 +1,53 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "Class": "10th",
+      "name": "Avika",
+      "totalgpa": 10,
+      "gpa": 9.2
+    },
+    {
+      "id": 2,
+      "Class": "10th",
+      "name": "Ashwarya",
+      "totalgpa": 10,
+      "gpa": 9.5
+    },
+    {
+      "id": 3,
+      "Class": "10th",
+      "name": "Srivalli",
+      "totalgpa": 10,
+      "gpa": 9
+    },
+    {
+      "id": 4,
+      "Class": "10th",
+      "name": "vanu",
+      "totalgpa": 10,
+      "gpa": 9
+    },
+    {
+      "id": 5,
+      "Class": "10th",
+      "name": "Avika",
+      "totalgpa": 10,
+      "gpa": 9.4
+    },
+    {
+      "id": "6",
+      "Class": "10th",
+      "name": "varsha",
+      "totalgpa": "10.0",
+      "gpa": "9.8"
+    },
+    {
+      "id": "7",
+      "Class": "10th",
+      "name": "vani",
+      "totalgpa": "10.0",
+      "gpa": "9.5"
+    }
+  ]
+}

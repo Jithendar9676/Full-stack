@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
-// import {BrowserRouter as Routes,Route, Router} from 'react-router-dom'
-// import Home from './pages/Home'
+ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+ import Home from './pages/Home'
+import UsersList from './pages/UsersList';
 // import About from './pages/About';
 
 
@@ -9,14 +9,15 @@ function App() {
   return (
     <>
       {
-        <Container/>
+    
       
-      /* <Router>
+       <Router>
         <Routes>
-          <Route path="/Home" element={<Home/>}/>
-          <Route path="/About" element={<About/>}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/users" element={<UsersList/>}/>
         </Routes>
-      </Router> */}
+      </Router> 
+      }
     </>
   );
 }
